@@ -6,6 +6,7 @@ import { PlotLand } from "./components/plotLand";
 function App() {
 	return (
 		<div className='App container m-4'>
+			Crop Rotation Application
 			<PlotLand></PlotLand>
 
 		</div>
