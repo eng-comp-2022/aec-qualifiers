@@ -7,6 +7,7 @@ const images = [
 	{ id: 5, src: "frontend/crop_families/miscellaneous.png", title: "" },
 	{ id: 6, src: "frontend/crop_families/solanaceae.png", title: "" },
 	{ id: 7, src: "frontend/crop_families/umbeliferae.png", title: "" },
+	{ id: 8, src: "frontend/crop_families/placeholder.png", title: "" },
 ];
 
 export default images;
