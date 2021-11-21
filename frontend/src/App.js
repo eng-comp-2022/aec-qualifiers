@@ -7,7 +7,7 @@ function App() {
 	return (
 		<div className='App container m-4'>
 			<PlotLand></PlotLand>
-			<VegiList></VegiList>
+
 		</div>
 	);
 }

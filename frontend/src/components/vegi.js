@@ -2,58 +2,71 @@ import React from "react";
 
 import { DropdownButton, Dropdown } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
-export function VegiList() {
+export function VegiList({ setter }) {
 	return (
 		<div>
-			<DropdownButton id='dropdown-basic-button' title='Dropdown button'>
+			<DropdownButton
+				onSelect={function (evt) {
+					setter(evt);
+				}}
+				id='dropdown-basic-button'
+				title='Dropdown button'>
 				<Dropdown.Item
-					href='#/action-1'
-					value="0"
+					eventKey='0'
 					style={{
-						backgroundColor: "lightgreen", 
-					}}>Brassicas</Dropdown.Item>
+						backgroundColor: "lightgreen",
+					}}>
+					Brassicas
+				</Dropdown.Item>
 				<Dropdown.Item
-					href='#/action-2'
-					value="1"
+					eventKey='1'
 					style={{
-						backgroundColor: "lightblue", 
-					}}>Legumes</Dropdown.Item>
+						backgroundColor: "lightblue",
+					}}>
+					Legumes
+				</Dropdown.Item>
 				<Dropdown.Item
-					href='#/action-3'
-					value="2"
+					eventKey='2'
 					style={{
-						backgroundColor: "yellow", 
-					}}>Solanaceae</Dropdown.Item>
+						backgroundColor: "yellow",
+					}}>
+					Solanaceae
+				</Dropdown.Item>
 				<Dropdown.Item
-					href='#/action-4'
-					value="3"
+					eventKey='3'
 					style={{
-						backgroundColor: "lilac", 
-					}}>Alliums</Dropdown.Item>
+						backgroundColor: "lilac",
+					}}>
+					Alliums
+				</Dropdown.Item>
 				<Dropdown.Item
-					href='#/action-5'
-					value="4"
+					eventKey='4'
 					style={{
-						backgroundColor: "orange", 
-					}}>Umbeliferae</Dropdown.Item>
+						backgroundColor: "orange",
+					}}>
+					Umbeliferae
+				</Dropdown.Item>
 				<Dropdown.Item
-					href='#/action-6'
-					value="5"
+					eventKey='5'
 					style={{
-						backgroundColor: "salmon", 
-					}}>Cucurbits</Dropdown.Item>
+						backgroundColor: "salmon",
+					}}>
+					Cucurbits
+				</Dropdown.Item>
 				<Dropdown.Item
-					href='#/action-7'
-					value="6"
+					eventKey='6'
 					style={{
-						backgroundColor: "pink", 
-					}}>Chenopodiaceae</Dropdown.Item>
+						backgroundColor: "pink",
+					}}>
+					Chenopodiaceae
+				</Dropdown.Item>
 				<Dropdown.Item
-					href='#/action-8'
-					value="7"
+					eventKey='7'
 					style={{
-						backgroundColor: "grey", 
-					}}>Miscellaneous</Dropdown.Item>
+						backgroundColor: "grey",
+					}}>
+					Miscellaneous
+				</Dropdown.Item>
 			</DropdownButton>
 		</div>
 	);
