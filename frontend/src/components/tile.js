@@ -22,12 +22,14 @@ export function Tile({ ind, col, place }) {
 
 	const stylesPadding = {
 		padding: 0,
+		width: 150,
 	};
 
 	const f = ".png";
-	const image = images[option];
+	const image = images[1];
 	return (
 		<div style={stylesPadding}>
+			<img src={image.src}></img>
 			<Button type='submit' onClick={() => setVeg()}>
 				{image.title}
 			</Button>
