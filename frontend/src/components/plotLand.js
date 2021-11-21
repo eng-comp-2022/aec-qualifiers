@@ -5,8 +5,8 @@ export function PlotLand(props) {
 
 	let land_plot = Array.from(Array(10), () => new Array(10));
 
-	for (let i=0; i < 10; i++){
-		for (let j=0; j < 10; j++){
+	for (let i=0; i < 8; i++){
+		for (let j=0; j < 8; j++){
 			land_plot[i][j] = 8
 		}
 	}
