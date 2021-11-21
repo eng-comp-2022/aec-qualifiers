@@ -9,23 +9,28 @@ const styleObj = {
 	hight: "25px",
 	paddingTop: "100px",
 };
-export function Tile(props) {
+export function Tile({ ind, col, place }) {
+	const stylesPadding = {
+		padding: 0,
+	};
 
+	const [option, setOption] = React.useState(8);
 
-	const image = images[props.ind];
-	console.log(props.ind);
+	function setVeg(setOption) {
+		setOption(ind);
+		console.log(option);
+		place(ind, col);
+	}
 
-
-
-    const stylesPadding = {
-			padding: 0,
-		};
-		return (
-			<div style={stylesPadding}>
-				<Button type='image' src={"./crop_families/miscellaneous.png"}>
-					{image.title}
-				</Button>
-			</div>
-		);
+	return (
+		<div style={stylesPadding}>
+			<Button
+				onClick={(e) => setVeg(setOption)}
+				type='image'
+				src={"./crop_families/miscellaneous.png"}>
+				{images[option].title}
+			</Button>
+		</div>
+	);
 }
 

@@ -22,31 +22,33 @@ export function PlotLand(props) {
 	};
 
 	let n = 8;
-	const [matrix, setMatrix] = React.useState(
-		Array.from({ length: n }, () => Array.from({ length: n }, () => null))
-	);
 
 	const handleChange = (row, column, event) => {
-		let copy = [...matrix];
-		copy[row][column] = +event.target.value;
-		setMatrix(copy);
-
-		console.log(matrix);
+		console.log(row);
+		console.log(column);
 	};
 
 	return (
 		<div>
 			<ul style={listStyles}>
-				{land_plot[0].map(function (item) {
+				{land_plot[0].map(function (item, index) {
 					return (
-						<Tile key={item} ind={item} col={0} place={handleChange}></Tile>
+						<Tile
+							key={item}
+							ind={veggieType}
+							col={0}
+							place={handleChange}></Tile>
 					);
 				})}
 			</ul>
 			<ul style={listStyles}>
-				{land_plot[1].map(function (item) {
+				{land_plot[1].map(function (item, index) {
 					return (
-						<Tile key={item} ind={item} col={1} place={handleChange}></Tile>
+						<Tile
+							key={item}
+							ind={veggieType}
+							col={1}
+							place={handleChange}></Tile>
 					);
 				})}
 			</ul>
@@ -54,7 +56,7 @@ export function PlotLand(props) {
 			<ul style={listStyles}>
 				{land_plot[2].map(function (item, index) {
 					return (
-						<Tile key={item} ind={item} col={2} place={handleChange}></Tile>
+						<Tile key={item} ind={index} col={2} place={handleChange}></Tile>
 					);
 				})}
 			</ul>
@@ -62,7 +64,7 @@ export function PlotLand(props) {
 			<ul style={listStyles}>
 				{land_plot[3].map(function (item, index) {
 					return (
-						<Tile key={item} ind={item} col={3} place={handleChange}></Tile>
+						<Tile key={item} ind={index} col={3} place={handleChange}></Tile>
 					);
 				})}
 			</ul>
@@ -70,31 +72,31 @@ export function PlotLand(props) {
 			<ul style={listStyles}>
 				{land_plot[4].map(function (item, index) {
 					return (
-						<Tile key={item} ind={item} col={4} place={handleChange}></Tile>
+						<Tile key={item} ind={index} col={4} place={handleChange}></Tile>
 					);
 				})}
 			</ul>
 
 			<ul style={listStyles}>
-				{land_plot[5].map(function (item) {
+				{land_plot[5].map(function (item, index) {
 					return (
-						<Tile key={item} ind={item} col={5} place={handleChange}></Tile>
+						<Tile key={item} ind={index} col={5} place={handleChange}></Tile>
 					);
 				})}
 			</ul>
 
 			<ul style={listStyles}>
-				{land_plot[6].map(function (item) {
+				{land_plot[6].map(function (item, index) {
 					return (
-						<Tile key={item} ind={item} col={6} place={handleChange}></Tile>
+						<Tile key={item} ind={index} col={6} place={handleChange}></Tile>
 					);
 				})}
 			</ul>
 
 			<ul style={listStyles}>
-				{land_plot[7].map(function (item) {
+				{land_plot[7].map(function (item, index) {
 					return (
-						<Tile key={item} ind={item} col={7} place={handleChange}></Tile>
+						<Tile key={item} ind={index} col={7} place={handleChange}></Tile>
 					);
 				})}
 			</ul>
