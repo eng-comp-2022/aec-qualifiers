@@ -12,12 +12,15 @@ const styleObj = {
 export function Tile(props) {
 	const image = images[props.ind];
 	console.log(props.ind);
-	return (
-		<div>
-			<Button type='image' src={"./crop_families/miscellaneous.png"}>
-				{image.title}
-			</Button>
-		</div>
-	);
+    const stylesPadding = {
+			padding: 0,
+		};
+		return (
+			<div style={stylesPadding}>
+				<Button type='image' src={"./crop_families/miscellaneous.png"}>
+					{image.title}
+				</Button>
+			</div>
+		);
 }
 
