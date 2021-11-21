@@ -11,3 +11,4 @@ export function Tile(props) {
 		</div>
 	);
 }
+
