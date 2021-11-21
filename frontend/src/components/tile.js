@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-import placeholder from "./crop_families/placeholder.png";
 import images from "./images";
+
 
 const styleObj = {
 	backGround: "crop_families/legumes.png",
@@ -10,25 +10,26 @@ const styleObj = {
 	paddingTop: "100px",
 };
 export function Tile({ ind, col, place }) {
+	
+
+	const [option, setOption] = React.useState(8);
+
+	function setVeg() {
+		fetch("https://api.npms.io/v2/search?q=react")
+			.then((response) => response.json())
+			.then((data) => data);
+	}
+
 	const stylesPadding = {
 		padding: 0,
 	};
 
-	const [option, setOption] = React.useState(8);
-
-	function setVeg(setOption) {
-		setOption(ind);
-		console.log(option);
-		place(ind, col);
-	}
-
+	const f = ".png";
+	const image = images[option];
 	return (
 		<div style={stylesPadding}>
-			<Button
-				onClick={(e) => setVeg()}
-				type='image'
-				src={"./crop_families/miscellaneous.png"}>
-				{images[option].title}
+			<Button type='submit' onClick={() => setVeg()}>
+				{image.title}
 			</Button>
 		</div>
 	);

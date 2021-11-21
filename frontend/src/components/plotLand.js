@@ -7,7 +7,7 @@ export function PlotLand(props) {
 
 	for (let i = 0; i < 8; i++) {
 		for (let j = 0; j < 8; j++) {
-			land_plot[i][j] = 8;
+			land_plot[i][j] = j;
 		}
 	}
 	const listStyles = {
@@ -35,7 +35,7 @@ export function PlotLand(props) {
 					return (
 						<Tile
 							key={item}
-							ind={veggieType}
+							ind={index}
 							col={0}
 							place={handleChange}></Tile>
 					);
@@ -46,7 +46,7 @@ export function PlotLand(props) {
 					return (
 						<Tile
 							key={item}
-							ind={veggieType}
+							ind={index}
 							col={1}
 							place={handleChange}></Tile>
 					);

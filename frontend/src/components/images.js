@@ -1,27 +1,37 @@
+import alliumns from './../crop_families/alliums.png'
+import brassicas from './../crop_families/brassicas.png'
+import solanaceae from './../crop_families/solanaceae.png'
+import chenopodiaceae from './../crop_families/chenopodiaceae.png'
+import cucurbits from './../crop_families/cucurbits.png'
+import legumes from './../crop_families/legumes.png'
+import miscellaneous from './../crop_families/miscellaneous.png'
+import placeholder from './../crop_families/placeholder.png'
+import umbeliferae from './../crop_families/umbeliferae.png'
+
 const images = [
-	{ id: 0, src: "frontend/crop_families/alliums.png", title: "alliums" },
-	{ id: 1, src: "frontend/crop_families/brassicas.png", title: "brassicas" },
-	{ id: 2, src: "frontend/crop_families/chenopodiaceae.png", title: "" },
+	{ id: 0, src: alliumns, title: "alliums" },
+	{ id: 1, src: brassicas, title: "brassicas" },
+	{ id: 2, src: chenopodiaceae, title: "chenopodiaceae" },
 	{
 		id: 3,
-		src: "frontend/crop_families/cucurbits.png",
-		title: "chenopodiaceae",
+		src: cucurbits,
+		title: "cucurbits",
 	},
-	{ id: 4, src: "frontend/crop_families/legumes.png", title: "legumes" },
+	{ id: 4, src: legumes, title: "legumes" },
 	{
 		id: 5,
-		src: "frontend/crop_families/miscellaneous.png",
+		src: miscellaneous,
 		title: "miscellaneous",
 	},
-	{ id: 6, src: "frontend/crop_families/solanaceae.png", title: "solanaceae" },
+	{ id: 6, src: solanaceae, title: "solanaceae" },
 	{
 		id: 7,
-		src: "frontend/crop_families/umbeliferae.png",
+		src: umbeliferae,
 		title: "umbeliferae",
 	},
 	{
 		id: 8,
-		src: "frontend/crop_families/placeholder.png",
+		src: placeholder,
 		title: "placeholder",
 	},
 ];
