@@ -30,9 +30,12 @@ function store_plot_layout(plot_year, width, height, layout_grid) {
   })
     .then((response) => response)
     .then((response) => {
-      console.log("HITTTING");
+      console.log("STORING");
     })
     .catch((error) => console.log(error));
 }
 
 export { get_plot_layout, store_plot_layout };
+
+store_plot_layout(2024, 4, 4, [0, 1, 2, 3, 4, 5, 3, 7, 2, 5, 8, 3, 5, 4, 8, 1]);
+get_plot_layout(2024);
