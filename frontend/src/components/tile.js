@@ -25,7 +25,7 @@ export function Tile({ ind, col, place }) {
 	return (
 		<div style={stylesPadding}>
 			<Button
-				onClick={(e) => setVeg(setOption)}
+				onClick={(e) => setVeg()}
 				type='image'
 				src={"./crop_families/miscellaneous.png"}>
 				{images[option].title}
