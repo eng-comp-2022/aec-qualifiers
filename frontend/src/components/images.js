@@ -1,11 +1,11 @@
 const images = [
 	{ id: 0, src: "frontend/crop_families/alliums.png", title: "alliums" },
 	{ id: 1, src: "frontend/crop_families/brassicas.png", title: "brassicas" },
-	{ id: 2, src: "frontend/crop_families/chenopodiaceae.png", title: "" },
+	{ id: 2, src: "frontend/crop_families/chenopodiaceae.png", title: "chenopodiaceae" },
 	{
 		id: 3,
 		src: "frontend/crop_families/cucurbits.png",
-		title: "chenopodiaceae",
+		title: "cucurbits",
 	},
 	{ id: 4, src: "frontend/crop_families/legumes.png", title: "legumes" },
 	{
