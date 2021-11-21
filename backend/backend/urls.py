@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from .views import articles
+from crops.views import *
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('articles/', articles)
+    path("admin/", admin.site.urls),
+    path("query_plot/<path:year>/", query_plot_layout_on_year),
+    path("store_plot/", store_plot),
 ]
