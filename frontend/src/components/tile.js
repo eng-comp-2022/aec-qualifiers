@@ -10,8 +10,13 @@ const styleObj = {
 	paddingTop: "100px",
 };
 export function Tile(props) {
+
+
 	const image = images[props.ind];
 	console.log(props.ind);
+
+    
+
     const stylesPadding = {
 			padding: 0,
 		};
